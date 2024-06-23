@@ -1,35 +1,41 @@
 module.exports = {
-  "env": {
-    "es6": true,
-    "node": true,
-    "jest": true
+  'env': {
+    'es6': true,
+    'node': true,
+    'jest': true
   },
-  "extends": "eslint:recommended",
-  "parserOptions": {
-    "sourceType": "module"
+  'extends': 'eslint:recommended',
+  'parser': '@babel/eslint-parser',
+  'parserOptions': {
+    'sourceType': 'module',
+    'babelOptions': {
+      'plugins': [
+        '@babel/plugin-syntax-import-assertions'
+      ]
+    }
   },
-  "rules": {
-    "indent": [
-      "error",
+  'rules': {
+    'indent': [
+      'error',
       2
     ],
-    "linebreak-style": [
-      "error",
-      "unix"
+    'linebreak-style': [
+      'error',
+      'unix'
     ],
-    "quotes": [
-      "error",
-      "single"
+    'quotes': [
+      'error',
+      'single'
     ],
-    "semi": [
-      "error",
-      "always"
+    'semi': [
+      'error',
+      'always'
     ],
-    "no-console": [
-      "warn"
+    'no-console': [
+      'warn'
     ],
-    "no-trailing-spaces": [
-      "error"
+    'no-trailing-spaces': [
+      'error'
     ]
   }
 };

@@ -6,7 +6,7 @@ import Listener    from './client/listener';
 import Request     from './client/request';
 import Validator   from './client/validator';
 
-import pkg         from '../../package.json';
+import pkg         from '../../package.json' with {type: 'json'};
 
 /**
  * A convenient wrapper around the API, allowing for generic, authenticated and
